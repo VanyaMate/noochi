@@ -1,0 +1,18 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: noochi
+    ports: ["5432:5432"]
+    volumes: ["pg-data:/var/lib/postgresql/data"]
+  redis:
+    image: redis:7-alpine
+    ports: ["6379:6379"]
+  nats:
+    image: nats:2.10-alpine
+    command: ["-js"]
+    ports: ["4222:4222"]
+volumes:
+  pg-data:

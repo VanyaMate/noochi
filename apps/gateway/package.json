@@ -1,0 +1,27 @@
+{
+  "name": "@noochi/gateway",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "dev": "tsx src/main.ts",
+    "typecheck": "tsc -p tsconfig.json"
+  },
+  "dependencies": {
+    "@fastify/cors": "^10.0.1",
+    "@noochi/bus": "workspace:*",
+    "@noochi/platform": "workspace:*",
+    "@noochi/shared": "workspace:*",
+    "fastify": "^5.2.0",
+    "jose": "^5.9.6",
+    "ws": "^8.18.0"
+  },
+  "devDependencies": {
+    "@types/ws": "^8.5.13",
+    "@types/node": "^22.10.2",
+    "@noochi/config": "workspace:*"
+  }
+}

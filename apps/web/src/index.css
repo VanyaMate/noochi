@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-cream text-cocoa font-round antialiased;
+  background-image:
+    radial-gradient(1200px 620px at 86% -14%, rgba(236, 142, 84, 0.13), transparent 64%),
+    radial-gradient(760px 460px at 50% 42%, rgba(247, 198, 140, 0.07), transparent 70%),
+    radial-gradient(900px 520px at -8% 112%, rgba(224, 128, 90, 0.08), transparent 60%);
+  background-attachment: fixed;
+}
+
+::selection {
+  background: rgba(224, 128, 90, 0.24);
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(117, 101, 90, 0.32) transparent;
+}
+*::-webkit-scrollbar { width: 8px; height: 8px; }
+*::-webkit-scrollbar-thumb { background: rgba(117, 101, 90, 0.26); border-radius: 8px; }
+*::-webkit-scrollbar-track { background: transparent; }
+
+@layer components {
+  .card {
+    @apply bg-parchment rounded-2xl shadow-soft border border-latte/80;
+  }
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-xl px-4 py-2 font-semibold transition
+      active:scale-[.97] disabled:opacity-50 disabled:pointer-events-none select-none;
+  }
+  .btn-primary { @apply btn bg-terra text-parchment hover:bg-terraDeep shadow-soft; }
+  .btn-ghost { @apply btn text-cocoaSoft hover:bg-latte/70; }
+  .btn-warm { @apply btn bg-terra/15 text-terraDeep hover:bg-terra/25; }
+  .input {
+    @apply w-full rounded-xl border border-latte bg-parchment px-3 py-2 outline-none
+      placeholder:text-cocoaSoft/50 focus:border-terra/60 focus:ring-2 focus:ring-terra/15 transition;
+  }
+  .chip { @apply inline-flex items-center gap-1 rounded-full px-2.5 py-0.5 text-xs font-bold; }
+}
+
+.bubble {
+  position: relative;
+  white-space: pre-wrap;
+  word-break: normal;
+  overflow-wrap: anywhere;
+}
+
+.msg-enter { animation: rise .3s ease both; }

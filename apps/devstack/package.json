@@ -1,0 +1,30 @@
+{
+  "name": "@noochi/devstack",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tsx src/main.ts",
+    "typecheck": "tsc -p tsconfig.json"
+  },
+  "dependencies": {
+    "@noochi/bus": "workspace:*",
+    "@noochi/db": "workspace:*",
+    "@noochi/gateway": "workspace:*",
+    "@noochi/platform": "workspace:*",
+    "@noochi/service-ai": "workspace:*",
+    "@noochi/service-analytics": "workspace:*",
+    "@noochi/service-auth": "workspace:*",
+    "@noochi/service-billing": "workspace:*",
+    "@noochi/service-bots": "workspace:*",
+    "@noochi/service-chat": "workspace:*",
+    "@noochi/service-study": "workspace:*",
+    "@noochi/service-users": "workspace:*",
+    "@noochi/shared": "workspace:*",
+    "drizzle-orm": "^0.38.3"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "@noochi/config": "workspace:*"
+  }
+}

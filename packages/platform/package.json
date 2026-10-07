@@ -1,0 +1,23 @@
+{
+  "name": "@noochi/platform",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "typecheck": "tsc -p tsconfig.json"
+  },
+  "dependencies": {
+    "@noochi/bus": "workspace:*",
+    "@noochi/cache": "workspace:*",
+    "@noochi/db": "workspace:*",
+    "@noochi/shared": "workspace:*",
+    "jose": "^5.9.6"
+  },
+  "devDependencies": {
+    "@noochi/config": "workspace:*",
+    "@types/node": "^22.10.2"
+  }
+}

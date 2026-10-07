@@ -1,0 +1,24 @@
+{
+  "name": "@noochi/service-study",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "dev": "tsx src/main.ts",
+    "typecheck": "tsc -p tsconfig.json"
+  },
+  "dependencies": {
+    "@noochi/bus": "workspace:*",
+    "@noochi/db": "workspace:*",
+    "@noochi/platform": "workspace:*",
+    "@noochi/shared": "workspace:*",
+    "drizzle-orm": "^0.38.3"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "@noochi/config": "workspace:*"
+  }
+}

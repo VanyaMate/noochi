@@ -1,0 +1,17 @@
+{"kind":"hello"}
+---
+{"kind":"event","subject":"evt.chat.dfbfef84-2001-4caf-8194-bd93d1de9bf6","payload":{"type":"message","conversationId":"dfbfef84-2001-4caf-8194-bd93d1de9bf6","message":{"id":"9a0b08d0-97ce-45c1-9898-f6e153596a59","conversationId":"dfbfef84-2001-4caf-8194-bd93d1de9bf6","sender":"user","characterId":n
+---
+{"kind":"event","subject":"evt.chat.dfbfef84-2001-4caf-8194-bd93d1de9bf6","payload":{"type":"typing","conversationId":"dfbfef84-2001-4caf-8194-bd93d1de9bf6","characterId":"d6b1cc39-c3a4-4079-b9c5-156093f43c55","on":true}}
+---
+{"kind":"event","subject":"evt.chat.dfbfef84-2001-4caf-8194-bd93d1de9bf6","payload":{"type":"check","conversationId":"dfbfef84-2001-4caf-8194-bd93d1de9bf6","messageId":"9a0b08d0-97ce-45c1-9898-f6e153596a59","status":"pending"}}
+---
+{"kind":"event","subject":"evt.chat.dfbfef84-2001-4caf-8194-bd93d1de9bf6","payload":{"type":"stream_delta","conversationId":"dfbfef84-2001-4caf-8194-bd93d1de9bf6","requestId":"09110451-d219-4d35-8b98-2609b276cb4b","characterId":"d6b1cc39-c3a4-4079-b9c5-156093f43c55","delta":"ok, ask! :))\n\n","done"
+---
+{"kind":"event","subject":"evt.chat.dfbfef84-2001-4caf-8194-bd93d1de9bf6","payload":{"type":"stream_delta","conversationId":"dfbfef84-2001-4caf-8194-bd93d1de9bf6","requestId":"09110451-d219-4d35-8b98-2609b276cb4b","characterId":"d6b1cc39-c3a4-4079-b9c5-156093f43c55","delta":"","done":true}}
+---
+{"kind":"event","subject":"evt.chat.dfbfef84-2001-4caf-8194-bd93d1de9bf6","payload":{"type":"message","conversationId":"dfbfef84-2001-4caf-8194-bd93d1de9bf6","message":{"id":"fdb8aae0-26ed-436d-8f98-8952d7d0b288","conversationId":"dfbfef84-2001-4caf-8194-bd93d1de9bf6","sender":"bot","characterId":"d
+---
+{"kind":"event","subject":"evt.chat.dfbfef84-2001-4caf-8194-bd93d1de9bf6","payload":{"type":"check","conversationId":"dfbfef84-2001-4caf-8194-bd93d1de9bf6","messageId":"9a0b08d0-97ce-45c1-9898-f6e153596a59","status":"done","result":{"ok":true,"issues":[],"summary":"Сообщение корректно","polished":nu
+---
+{"kind":"event","subject":"evt.chat.dfbfef84-2001-4caf-8194-bd93d1de9bf6","payload":{"type":"typing","conversationId":"dfbfef84-2001-4caf-8194-bd93d1de9bf6","characterId":"d6b1cc39-c3a4-4079-b9c5-156093f43c55","on":false}}
